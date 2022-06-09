@@ -1,0 +1,389 @@
+@media screen and (max-width: 1530px) {
+  .feedback {
+    background-image: none; } }
+
+@media screen and (max-width: 1095px) {
+  img {
+    max-width: 100%; }
+  .case {
+    width: 750px; }
+  .header {
+    text-align: center; }
+    .header__logo, .header__consult, .header__phones {
+      float: none; }
+    .header__logo {
+      margin-bottom: 20px; }
+    .header__consult {
+      margin-right: 20px; }
+    .header__consult, .header__phones {
+      display: inline-block;
+      vertical-align: top;
+      width: 225px; }
+  .logo {
+    margin-right: 0; }
+    .logo img {
+      margin-left: auto;
+      margin-right: auto; }
+    .logo p {
+      text-align: center;
+      padding-left: 13px; }
+  .nav {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .nav li {
+      vertical-align: middle;
+      margin-right: 0;
+      margin-left: 0;
+      width: 25%; }
+    .nav a {
+      padding-left: 20px;
+      padding-right: 20px; }
+  .title {
+    font-size: 32px;
+    line-height: normal; }
+  .glazing, .feedback, .share, .decoration, .work, .dops, .advantages, .windows, .addiction, .dops-steps, .decoration-block, .materials, .wood {
+    padding-top: 25px;
+    padding-bottom: 25px; }
+    .glazing__title, .feedback__title, .share__title, .decoration__title, .work__title, .dops__title, .advantages__title, .windows__title, .addiction__title, .dops-steps__title, .decoration-block__title, .materials__title, .wood__title {
+      margin-bottom: 20px; }
+  .glazing__item {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .glazing__img {
+    margin-left: 0 !important;
+    margin-right: 0 !important; }
+  .glazing__desc {
+    margin-bottom: 15px; }
+  .glazing__counts {
+    display: none; }
+  .glazing__content {
+    margin-left: 0 !important;
+    margin-top: 10px;
+    padding-left: 2px; }
+  .glazing__txt li {
+    font-size: 17px;
+    padding-left: 28px; }
+  .feedback__manager {
+    margin-left: 25px;
+    margin-right: 25px; }
+  .feedback__phones {
+    margin-bottom: 0; }
+  .feedback__title {
+    font-size: 28px; }
+  .feedback__subtitle {
+    margin-bottom: 25px;
+    font-size: 22px; }
+    .feedback__subtitle:before {
+      margin-top: 25px;
+      margin-bottom: 20px; }
+  .feedback__elements {
+    margin-bottom: 25px; }
+  .feedback__input {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px; }
+  .feedback__input, .feedback__btn {
+    width: 400px; }
+  .feedback__desc {
+    margin-bottom: 10px; }
+  .share {
+    height: auto; }
+    .share__title span {
+      font-size: 32px;
+      top: 0; }
+    .share__img {
+      display: none; }
+    .share__wrap {
+      margin-left: 0;
+      padding-top: 0;
+      max-width: none; }
+    .share__desc {
+      margin-bottom: 20px; }
+    .share__btn {
+      margin-top: -10px; }
+  .decoration__list {
+    margin-left: -15px;
+    margin-right: -15px; }
+  .decoration__item {
+    width: 320px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px; }
+    .decoration__item:nth-of-type(4) .decoration__subtitle {
+      padding-left: 15px;
+      padding-right: 15px; }
+  .decoration__subtitle {
+    padding-left: 50px;
+    padding-right: 50px; }
+  .decoration__btn {
+    margin-top: -5px; }
+  .work {
+    padding-bottom: 15px; }
+    .work__item {
+      margin-bottom: 10px; }
+  .dops {
+    padding-bottom: 15px; }
+    .dops__list {
+      margin-left: -10px;
+      margin-right: -10px; }
+    .dops__item {
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 20px; }
+  .advantages__img, .advantages__content {
+    float: none;
+    margin-left: auto;
+    margin-right: auto; }
+  .advantages__img img {
+    margin-left: auto;
+    margin-right: auto; }
+  .advantages__content {
+    width: 100%; }
+    .advantages__content p {
+      margin-bottom: 10px; }
+  .windows {
+    padding-bottom: 0; }
+    .windows_3 .windows__item:nth-of-type(3) {
+      margin-top: 0;
+      margin-left: 0; }
+      .windows_3 .windows__item:nth-of-type(3) img {
+        margin-top: -5px; }
+    .windows__item {
+      margin-bottom: 30px; }
+    .windows__subtitle {
+      margin-bottom: 5px; }
+    .windows__price {
+      position: relative;
+      left: 0 !important;
+      top: 0 !important; }
+    .windows_2 .windows__list {
+      margin-bottom: 20px;
+      margin-left: -12px;
+      margin-right: -12px; }
+    .windows_2 .windows__item {
+      width: 50%;
+      margin-right: 0 !important;
+      margin-bottom: 0;
+      padding-left: 5px;
+      padding-right: 5px; }
+    .windows_2 .windows__subtitle {
+      margin-top: 10px; }
+    .windows_4 .windows__item {
+      margin-left: 15px;
+      margin-right: 15px !important;
+      padding-bottom: 0; }
+      .windows_4 .windows__item:nth-of-type(1) {
+        margin-left: 25px; }
+  .addiction {
+    padding-bottom: 0; }
+    .addiction__item {
+      width: 50%;
+      margin-bottom: 25px; }
+    .addiction__img {
+      margin-bottom: 12px; }
+  .dops-steps {
+    padding-bottom: 0; }
+    .dops-steps__item {
+      padding-top: 0 !important;
+      margin-bottom: 25px; }
+    .dops-steps__img {
+      margin-bottom: 12px; }
+  .decoration-block__img {
+    right: 0; }
+  .materials {
+    padding-bottom: 0; }
+    .materials__item {
+      width: 145px;
+      margin-left: 15px !important;
+      margin-right: 15px !important;
+      margin-bottom: 30px; }
+    .materials__img {
+      margin-left: auto;
+      margin-right: auto; }
+      .materials__img img {
+        margin: 4px 3px; }
+  .wood__item {
+    margin-right: 15px !important;
+    margin-left: 15px !important;
+    margin-bottom: 15px; }
+  .wood__list {
+    margin-bottom: 10px; } }
+
+@media screen and (max-width: 767px) {
+  .case {
+    width: 100%; }
+  .title {
+    font-size: 24px; }
+  .header__consult, .header__phones {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .header__logo {
+    margin-bottom: 10px; }
+  .header__consult {
+    margin-bottom: 15px;
+    text-align: center; }
+  .nav {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    .nav a {
+      padding-left: 0;
+      padding-right: 0; }
+      .nav a:before, .nav a:after {
+        display: none; }
+    .nav li {
+      width: 100%;
+      margin-bottom: 10px; }
+      .nav li:last-of-type {
+        margin-bottom: 0; }
+  .banner__title span {
+    font-size: 24px;
+    line-height: normal; }
+  .glazing__item {
+    float: none;
+    max-width: 365px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto; }
+    .glazing__item:nth-of-type(1) {
+      margin-bottom: 30px; }
+  .glazing__img, .glazing__content {
+    float: none; }
+  .glazing__img img {
+    margin-right: auto; }
+  .feedback__phone {
+    display: block;
+    font-size: 28px; }
+  .feedback__manager {
+    display: none; }
+  .feedback__input, .feedback__btn {
+    width: 100%;
+    max-width: 400px; }
+  .popup_order, .popup_policy {
+    width: 400px; }
+  .popup_order .popup__title {
+    margin-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center; }
+    .popup_order .popup__title p {
+      display: none; }
+  .popup_order .popup__wrap {
+    padding: 20px;
+    background: none; }
+  .popup_order .popup__elements {
+    max-width: 100%; }
+  .popup_order .popup__policy {
+    padding-left: 7px;
+    padding-right: 7px; }
+  .windows_3 .windows__item:nth-of-type(1) img {
+    left: 5px; }
+  .windows_3 .windows__item:nth-of-type(3) img {
+    left: -15px; }
+  .windows__item, .windows__img {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important; }
+  .windows__img img {
+    position: relative;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+  .windows__item {
+    margin-bottom: 20px !important; }
+  .work__item {
+    padding-top: 25px;
+    padding-bottom: 30px; }
+  .work__subtitle:after {
+    display: none; }
+  .footer__logo, .footer__phones {
+    float: none; }
+  .footer__phones {
+    width: 225px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px; } }
+
+@media screen and (max-width: 560px) {
+  .fixed-btn-order {
+    display: none; }
+  .share__title {
+    display: none; }
+    .share__title .icon {
+      -webkit-transform: scale(0.6);
+          -ms-transform: scale(0.6);
+              transform: scale(0.6);
+      margin-left: -15px; }
+    .share__title span {
+      margin-left: 0; }
+  .share__desc {
+    margin-bottom: 15px;
+    font-size: 24px; }
+  .share__txt {
+    line-height: normal; }
+  .decoration__item {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    margin-bottom: 15px; }
+  .decoration__subtitle {
+    padding-left: 0px !important;
+    padding-right: 0px !important; }
+  .decoration__btn {
+    max-width: 280px;
+    margin-top: 20px; }
+  .addiction__item, .dops-steps__item {
+    width: 100%; }
+  .dops-steps__item {
+    margin-left: 0;
+    margin-right: 0; }
+  .popup {
+    width: 95%; }
+    .popup_gift .popup__wrap {
+      padding-top: 40px;
+      padding-bottom: 20px; }
+    .popup_policy {
+      padding: 30px 15px 25px; }
+  .logo p {
+    display: none; } }
+
+@media screen and (max-width: 490px) {
+  .header {
+    padding-bottom: 50px; }
+    .header__consult {
+      margin-top: 0;
+      padding-top: 0;
+      margin-bottom: 0; }
+      .header__consult p {
+        display: none; }
+      .header__consult .btn {
+        position: absolute;
+        bottom: -40px;
+        left: 50%;
+        margin-left: -112.5px;
+        width: 225px; }
+  .banner {
+    padding: 30px 15px; }
+    .banner__wrap {
+      width: 100%;
+      padding: 15px; }
+    .banner__title {
+      margin-bottom: 10px; }
+      .banner__title .icon {
+        margin-right: 10px; }
+      .banner__title span {
+        font-size: 20px;
+        line-height: normal;
+        width: -webkit-calc(100% - 65px);
+        width: calc(100% - 65px); }
+    .banner__desc {
+      margin-bottom: 15px; }
+    .banner__input {
+      margin-bottom: 10px; }
+    .banner__btn {
+      margin-top: 0; } }

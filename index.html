@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>FensterBau</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="template/styles/css/style.css" />
+	<link rel="stylesheet" href="template/styles/css/responsive.css" />
+	<script src="template/scripts/libs.js"></script>
+	<script src="template/scripts/common.js"></script>
+</head>
+<body>
+	<header class="header">
+		<div class="case row">
+			<div class="header__logo logo col"><a href=""><img src="upload/logo.png" alt=""><p>В городе и области</p></a></div>
+			<div class="header__consult col">
+				<p>Консультация по вопросам остекления</p>
+				<a data-fancybox data-src="#popup-order" href="javascript:;" class="header__btn btn btn_green-border btn_small">Заказать бесплатный замер</a>
+			</div>
+			<div class="header__phones col">
+				<div class="header__phone"><i class="icon icon-phone-hand"></i><a href="tel:80000000000">(+373)000-00-000</a></div>
+				<div class="header__phone"><a href="tel:+80000000000">(+373)000-00-000</a></div>
+				<a data-fancybox data-src="#popup-callback" href="javascript:;" class="header__btn btn btn_violet-border btn_small">Заказать обратный звонок</a>
+			</div>
+		</div>
+	</header>
+	<div class="nav nav_top">
+		<div class="case">
+			<ul>
+				<li><a href="#windows_3">Пластиковые окна</a></li>
+				<li><a href="#glazing">Остекление балконов</a></li>
+				<li><a href="#decoration">Отделка балконов</a></li>
+		
+			</ul>
+		</div>
+	</div>
+	<main class="main">
+		<div class="banner" style="background-image: url('upload/banner/1.png');">
+			<div class="banner__wrap">
+				<div class="banner__title"><i class="icon icon-gift"></i><span>Сушилка для белья в подарок!</span></div>
+				<div class="banner__desc">При заказе остекления и отделки балкона или лоджии</div>
+				<div class="banner__form">
+					<form action="javascript:void(null);" method="post" id="form_1" onsubmit="sendForm('form_1');">
+						<input type="text" class="banner__input input input_default input_small" name="name" placeholder="Ваше имя" required="true">
+						<input type="text" class="banner__input input input_default input_small input_phone" name="phone" placeholder="Ваш телефон" required="true">
+						<input type="hidden" name="subject" value="Форма - 'Сушилка для белья в подарок!'">
+						<button class="banner__btn btn btn_violet-bg btn_big">Заказать звонок</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="glazing" id="glazing">
+			<div class="case">
+				<div class="glazing__title title">Остекление балконов и лоджий</div>
+				<div class="glazing__list row">
+					<div class="glazing__item col">
+						<div class="glazing__data row">
+							<div class="glazing__img col right"><img src="upload/glazing/warm-glazing.png" alt=""></div>
+							<div class="glazing__counts col">
+								<div class="glazing__count"><span>-10<b>0</b>С</span>на улице</div>
+								<div class="glazing__count"><i class="icon icon-thermometer-violet"></i><span>20<b>0</b>С</span>внутри</div>
+							</div>
+						</div>
+						<div class="glazing__content">
+							<div class="glazing__price">Цена: <span class="color-violet">3 000 лей</span></div>
+							<div class="glazing__desc">*Цена указана за оконную конструкцию размером 2100х1300мм</div>
+							<div class="glazing__subtitle">Теплое остекление:</div>
+							<div class="glazing__txt glazing__txt_violet">
+								<ul>
+									<li>Остекление распашной металлопластиковой конструкцией</li>
+									<li>Теплее раздвижных окон</li>
+									<li>Максимальное сохранение тепла!</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="glazing__item col">
+						<div class="glazing__data row">
+							<div class="glazing__img col"><img src="upload/glazing/cold-glazing.png" alt=""></div>
+							<div class="glazing__counts col">
+								<div class="glazing__count"><span>-10<b>0</b>С</span>на улице</div>
+								<div class="glazing__count"><i class="icon icon-thermometer-green"></i><span>5<b>0</b>С</span>внутри</div>
+							</div>
+						</div>
+						<div class="glazing__content">
+							<div class="glazing__price">Цена: <span class="color-green">2 400 лей</span></div>
+							<div class="glazing__desc">*Цена указана за оконную конструкцию размером 2100х1300мм</div>
+							<div class="glazing__subtitle">холодное остекление:</div>
+							<div class="glazing__txt glazing__txt_green">
+								<ul>
+									<li>Остекление раздвижной алюминиевой конструкцией</li>
+									<li>Дешевле пластикового балкона</li>
+									<li>Максимальная эконимия пространства</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="feedback feedback_consult">
+			<div class="case">
+				<div class="feedback__title">Бесплатная консультация по вопросам остекления</div>
+				<div class="feedback__phones">
+					<div class="feedback__phone"><a href="" class="color-green">(+373) 000-00-000</a></div>
+					<div class="feedback__manager"><i class="icon icon-manager"></i></div>
+					<div class="feedback__phone"><a href="" class="color-violet">(+373)000-00-000</a></div>
+				</div>
+				<div class="feedback__subtitle">Оставьте Ваш номер телефона и мы перезвоним вам!</div>
+				<div class="feedback__elements">
+					<form action="javascript:void(null);" method="post" id="form_2" onsubmit="sendForm('form_2');">
+						<input type="text" class="feedback__input input input_default input_small" placeholder="Ваше имя" name="name" required="true">
+						<input type="text" class="feedback__input input input_default input_small input_phone" placeholder="Ваш телефон" name="phone" required="true">
+						<input type="hidden" name="subject" value="Форма - 'Бесплатная консультация по вопросам остекления'">
+						<button class="feedback__btn btn btn_violet-bg btn_big">Заказать звонок</button>
+					</form>
+				</div>
+				<div class="feedback__desc">Оставляя свои данные, Вы подтвержаете свое совершеннолетие, соглашаетесь на обработку персональных данных в соответствии с Правовой информацией</div>
+			</div>
+		</div>
+		<div class="share">
+			<div class="case">
+				<div class="share__img"><img src="upload/shares/1.png" alt=""></div>
+				<div class="share__wrap">
+					<div class="share__title"><i class="icon icon-gifts"></i><span>Акция!</span></div>
+					<div class="share__desc">При заказе остекления до 24 ноября Вы получаете совершенно бесплатно:</div>
+					<div class="share__txt">
+						<ul>
+							<li>Демонтаж старой конструкции</li>
+							<li>Доставку конструкции и материалов для отделки</li>
+							<li>Подъем на этаж</li>
+							<li>Подарок-сюрприз в день монтажа</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="decoration" id="decoration">
+			<div class="case">
+				<div class="decoration__title title">обшивка и утепление балкона</div>
+				<div class="decoration__list row_line">
+					<div class="decoration__item col_line">
+						<div class="decoration__img"><img src="upload/decoration/1.png" alt=""></div>
+						<div class="decoration__subtitle">Наружная отделка</div>
+					</div>
+					<div class="decoration__item col_line">
+						<div class="decoration__img"><img src="upload/decoration/2.png" alt=""></div>
+						<div class="decoration__subtitle">отделка панелями ПВХ</div>
+					</div>
+					<div class="decoration__item col_line">
+						<div class="decoration__img"><img src="upload/decoration/3.png" alt=""></div>
+						<div class="decoration__subtitle">Утепление стен и пола</div>
+					</div>
+					<div class="decoration__item col_line">
+						<div class="decoration__img"><img src="upload/decoration/4.png" alt=""></div>
+						<div class="decoration__subtitle">Отделка деревянной вагонкой</div>
+					</div>
+				</div>
+				<a href="" class="decoration__btn btn btn_green-bg btn_big">Другие виды отделки</a>
+			</div>
+		</div>
+		<div class="feedback feedback_detail">
+			<div class="case">
+				<div class="feedback__title">Узнайте подробнее об остеклении и отделке балконов</div>
+				<div class="feedback__subtitle">Оставьте Ваш номер телефона и мы перезвоним вам!</div>
+				<div class="feedback__elements">
+					<form action="javascript:void(null);" method="post" id="form_3" onsubmit="sendForm('form_3');">
+						<input type="text" class="feedback__input input input_default input_small" placeholder="Ваше имя" name="name" required="true">
+						<input type="text" class="feedback__input input input_default input_small input_phone" placeholder="Ваш телефон" name="phone" required="true">
+						<input type="hidden" name="subject" value="Форма - 'Узнайте подробнее об остеклении и отделке балконов'">
+						<button class="feedback__btn btn btn_violet-bg btn_big">Заказать звонок</button>
+					</form>
+				</div>
+				<div class="feedback__desc">Оставляя свои данные, Вы подтвержаете свое совершеннолетие, соглашаетесь на обработку персональных данных в соответствии с Правовой информацией</div>
+			</div>
+		</div>
+		<div class="work">
+			<div class="case">
+				<div class="work__title title">Как мы работаем</div>
+				<div class="work__list row_line">
+					<div class="work__item col_line">
+						<div class="work__icon"><i class="icon icon-call"></i></div>
+						<div class="work__subtitle">Звонок</div>
+					</div>
+					<div class="work__item col_line">
+						<div class="work__icon"><i class="icon icon-metering"></i></div>
+						<div class="work__subtitle">Замер</div>
+					</div>
+					<div class="work__item col_line">
+						<div class="work__icon"><i class="icon icon-window"></i></div>
+						<div class="work__subtitle">Изготовление</div>
+					</div>
+					<div class="work__item col_line">
+						<div class="work__icon"><i class="icon icon-waggon"></i></div>
+						<div class="work__subtitle">Доставка</div>
+					</div>
+					<div class="work__item col_line">
+						<div class="work__icon"><i class="icon icon-installation"></i></div>
+						<div class="work__subtitle">Монтаж</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="feedback feedback_roulette">
+			<div class="case">
+				<div class="feedback__title">Запишитесь на бесплатный замер</div>
+				<div class="feedback__phones">
+					<div class="feedback__phone"><a href="" class="color-green">(+373) 000-00-000</a></div>
+					<div class="feedback__manager"><i class="icon icon-manager"></i></div>
+					<div class="feedback__phone"><a href="" class="color-violet">(+373)000-00-000</a></div>
+				</div>
+				<div class="feedback__subtitle">Оставьте Ваш номер телефона и мы перезвоним вам!</div>
+				<div class="feedback__elements">
+					<form action="javascript:void(null);" method="post" id="form_4" onsubmit="sendForm('form_4');">
+						<input type="text" class="feedback__input input input_default input_small" placeholder="Ваше имя" name="name" required="true">
+						<input type="text" class="feedback__input input input_default input_small input_phone" placeholder="Ваш телефон" name="phone" required="true">
+						<input type="hidden" name="subject" value="Форма - 'Запишитесь на бесплатный замер'">
+						<button class="feedback__btn btn btn_violet-bg btn_big">Заказать звонок</button>
+					</form>
+				</div>
+				<div class="feedback__desc">Оставляя свои данные, Вы подтвержаете свое совершеннолетие, соглашаетесь на обработку персональных данных в соответствии с Правовой информацией</div>
+			</div>
+		</div>
+		<div class="dops">
+			<div class="case">
+				<div class="dops__title title">Дополнительные возможности</div>
+				<div class="dops__list row_line">
+					<div class="dops__item col_line">
+						<div class="dops__img"><img src="upload/dops/main/1.png" alt=""></div>
+						<div class="dops__subtitle">Жалюзи</div>
+					</div>
+					<div class="dops__item col_line">
+						<div class="dops__img"><img src="upload/dops/main/2.png" alt=""></div>
+						<div class="dops__subtitle">Электромонтаж</div>
+					</div>
+					<div class="dops__item col_line">
+						<div class="dops__img"><img src="upload/dops/main/3.png" alt=""></div>
+						<div class="dops__subtitle">освещение</div>
+					</div>
+					<div class="dops__item col_line">
+						<div class="dops__img"><img src="upload/dops/main/4.png" alt=""></div>
+						<div class="dops__subtitle">крыша</div>
+					</div>
+					<div class="dops__item col_line">
+						<div class="dops__img"><img src="upload/dops/main/5.png" alt=""></div>
+						<div class="dops__subtitle">Москитные сетки</div>
+					</div>
+					<div class="dops__item col_line">
+						<div class="dops__img"><img src="upload/dops/main/6.png" alt=""></div>
+						<div class="dops__subtitle">Тонировка стекол</div>
+					</div>
+					<div class="dops__item col_line">
+						<div class="dops__img"><img src="upload/dops/main/7.png" alt=""></div>
+						<div class="dops__subtitle">Установка сушилки</div>
+					</div>
+					<div class="dops__item col_line">
+						<div class="dops__img"><img src="upload/dops/main/8.png" alt=""></div>
+						<div class="dops__subtitle">Шкафы, тумбы</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="feedback feedback_questions">
+			<div class="case">
+				<div class="feedback__title">Остались вопросы по остеклению - задавайте!</div>
+				<div class="feedback__subtitle">Оставьте Ваш номер телефона и мы перезвоним вам!</div>
+				<div class="feedback__elements">
+					<form action="javascript:void(null);" method="post" id="form_5" onsubmit="sendForm('form_5');">
+						<input type="text" class="feedback__input input input_default input_small" placeholder="Ваше имя" name="name" required="true">
+						<input type="text" class="feedback__input input input_default input_small input_phone" placeholder="Ваш телефон" name="phone" required="true">
+						<input type="hidden" name="subject" value="Форма - 'Остались вопросы по остеклению - задавайте!'">
+						<button class="feedback__btn btn btn_violet-bg btn_big">Заказать звонок</button>
+					</form>
+				</div>
+				<div class="feedback__desc">Оставляя свои данные, Вы подтвержаете свое совершеннолетие, соглашаетесь на обработку персональных данных в соответствии с Правовой информацией</div>
+				<div class="feedback__subdesc">Предложения на сайте не являются публичной офертой</div>
+			</div>
+		</div>
+		<div class="advantages">
+			<div class="case">
+				<div class="advantages__title title">Преимущества <br />энергосберегающего стеклопакета</div>
+				<div class="advantages__txt row">
+					<div class="advantages__img col"><img src="upload/advantages.png" alt=""></div>
+					<div class="advantages__content col">
+						<p>Энергосберегающий стеклопакет, помимо обычного стекла, включает в себя низкоэмисионноное стекло и действует по принципу теплового зеркала. Теплоотражающее покрытие находится внутри стеклопакета, что в свою очередь сохраняет его от механических воздействий.</p>
+						<p>Серебряное покрытие на стекле, за счет которого обеспечиваются отражающие свойства, никак не влияет на светопропускные способности окна. Поскольку потребность в отоплении снижается, то такие стеклопакеты называют энергосберегающими.</p>
+						<p>Энергосберегающий стеклопакет снижает теплопотери более чем на 70% по отношению к обычному, обладает высокой светопропускной способностью и отражает ультрафиолетовое излучение. Причем экономия электроэнергии происходит по трем направлениям:</p>
+						<p>- снижаются затраты на отопление зимой</p>
+						<p>- на охлаждение воздуха летом</p>
+						<p>- на освещение в дневное время суток — пластиковые окна обладают отличными светопроницающими характеристиками.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="windows windows_3" id="windows_3">
+			<div class="case">
+				<div class="windows__title title">Пластиковые окна по низким ценам</div>
+				<div class="windows__list row_line">
+					<div class="windows__item col_line">
+						<div class="windows__subtitle">Окно 2 створки</div>
+						<div class="windows__img"><img src="upload/windows/2.png" alt=""><span class="windows__price">2 400 лей</span></div>
+					</div>
+					<div class="windows__item col_line">
+						<div class="windows__subtitle">Окно 3 створки</div>
+						<div class="windows__img"><img src="upload/windows/3.png" alt=""><span class="windows__price">2 800 лей</span></div>
+					</div>
+					<div class="windows__item col_line">
+						<div class="windows__subtitle">Окно + балконная дверь</div>
+						<div class="windows__img"><img src="upload/windows/4.png" alt=""><span class="windows__price">3 700 лей</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="addiction">
+			<div class="case row_line">
+				<div class="addiction__title title">От чего зависит цена</div>
+				<div class="addiction__list row_line">
+					<div class="addiction__item col_line">
+						<div class="addiction__img"><img src="upload/addiction/1.png" alt=""></div>
+						<div class="addiction__subtitle">Толщина профиля</div>
+						<div class="addiciton__txt">От 50 до 80 мм</div>
+					</div>
+					<div class="addiction__item col_line">
+						<div class="addiction__img"><img src="upload/addiction/2.png" alt=""></div>
+						<div class="addiction__subtitle">Количество стекол</div>
+						<div class="addiciton__txt">От 2 до 4 стекол</div>
+					</div>
+					<div class="addiction__item col_line">
+						<div class="addiction__img"><img src="upload/addiction/3.png" alt=""></div>
+						<div class="addiction__subtitle">Функционал створок</div>
+						<div class="addiciton__txt">Поворотные, <br/>поворотно-откидные механизмы</div>
+					</div>
+					<div class="addiction__item col_line">
+						<div class="addiction__img"><img src="upload/addiction/4.png" alt=""></div>
+						<div class="addiction__subtitle">Качество материалов</div>
+						<div class="addiciton__txt">Подоконники, откосы и др.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="dops-steps">
+			<div class="case">
+				<div class="dops-steps__title title">Дополнительные возможности</div>
+				<div class="dops-steps__list row_line">
+					<div class="dops-steps__item col_line">
+						<div class="dops-steps__img"><img src="upload/dops/termookna/1.png" alt=""></div>
+						<div class="dops-steps__subtitle">Жалюзи</div>
+					</div>
+					<div class="dops-steps__item col_line">
+						<div class="dops-steps__img"><img src="upload/dops/termookna/2.png" alt=""></div>
+						<div class="dops-steps__subtitle">Москитные сетки</div>
+					</div>
+					<div class="dops-steps__item col_line">
+						<div class="dops-steps__img"><img src="upload/dops/termookna/3.png" alt=""></div>
+						<div class="dops-steps__subtitle">Ламинация</div>
+					</div>
+					<div class="dops-steps__item col_line">
+						<div class="dops-steps__img"><img src="upload/dops/termookna/4.png" alt=""></div>
+						<div class="dops-steps__subtitle">Тонировка стекол</div>
+					</div>
+					<div class="dops-steps__item col_line">
+						<div class="dops-steps__img"><img src="upload/dops/termookna/5.png" alt=""></div>
+						<div class="dops-steps__subtitle">Термоокна</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="windows windows_2">
+			<div class="case">
+				<div class="windows__title title">Окна для балкона / лоджии</div>
+				<div class="windows__list row_line">
+					<div class="windows__item col_line">
+						<div class="windows__img"><img src="upload/glazing/warm-glazing.png" alt=""></div>
+						<div class="windows__subtitle">Распашные окна</div>
+					</div>
+					<div class="windows__item col_line">
+						<div class="windows__img"><img src="upload/glazing/cold-glazing.png" alt=""></div>
+						<div class="windows__subtitle">Раздвижные окна</div>
+					</div>
+				</div>
+				<div class="windows__desc">Отделка балкона / лоджии со скидкой!</div>
+			</div>
+		</div>
+		<div class="decoration-block">
+			<div class="case">
+				<div class="decoration-block__img"><img src="upload/otdelka.png" alt=""></div>
+			</div>
+		</div>
+		<div class="materials">
+			<div class="case">
+				<div class="materials__title title">Материалы отделки</div>
+				<div class="materials__list row_line">
+					<div class="materials__item col_line">
+						<div class="materials__img"><img src="upload/materials/1.png" alt=""></div>
+						<div class="materials__subtitle">линолеум</div>
+					</div>
+					<div class="materials__item col_line">
+						<div class="materials__img"><img src="upload/materials/2.png" alt=""></div>
+						<div class="materials__subtitle">ламинат</div>
+					</div>
+					<div class="materials__item col_line">
+						<div class="materials__img"><img src="upload/materials/3.png" alt=""></div>
+						<div class="materials__subtitle">ваниловая вагонка</div>
+					</div>
+					<div class="materials__item col_line">
+						<div class="materials__img"><img src="upload/materials/4.png" alt=""></div>
+						<div class="materials__subtitle">деревянная вагонка</div>
+					</div>
+					<div class="materials__item col_line">
+						<div class="materials__img"><img src="upload/materials/5.png" alt=""></div>
+						<div class="materials__subtitle">Панели пвх</div>
+					</div>
+					<div class="materials__item col_line">
+						<div class="materials__img"><img src="upload/materials/6.png" alt=""></div>
+						<div class="materials__subtitle">краска</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="windows windows_4">
+			<div class="case">
+				<div class="windows__title title">Пластиковые окна по низким ценам</div>
+				<div class="windows__list row_line">
+					<div class="windows__item col_line">
+						<div class="windows__subtitle">Окно 1 створка</div>
+						<div class="windows__img"><img src="upload/windows/1.png" alt=""><span class="windows__price">1 150 лей</span></div>
+					</div>
+					<div class="windows__item col_line">
+						<div class="windows__subtitle">Окно 2 створки</div>
+						<div class="windows__img"><img src="upload/windows/2.png" alt=""><span class="windows__price">1 400 лей</span></div>
+					</div>
+					<div class="windows__item col_line">
+						<div class="windows__subtitle">Окно 3 створки</div>
+						<div class="windows__img"><img src="upload/windows/3.png" alt=""><span class="windows__price">1 800 лей</span></div>
+					</div>
+					<div class="windows__item col_line">
+						<div class="windows__subtitle">Дверь</div>
+						<div class="windows__img"><img src="upload/windows/5.png" alt=""><span class="windows__price">2 400 лей</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wood">
+			<div class="case">
+				<div class="wood__title title">Окна с ламинацией под дерево</div>
+				<div class="wood__list row_line">
+					<div class="wood__item col_line"><img src="upload/wood/1.png" alt=""></div>
+					<div class="wood__item col_line"><img src="upload/wood/2.png" alt=""></div>
+					<div class="wood__item col_line"><img src="upload/wood/3.png" alt=""></div>
+					<div class="wood__item col_line"><img src="upload/wood/4.png" alt=""></div>
+					<div class="wood__item col_line"><img src="upload/wood/5.png" alt=""></div>
+					<div class="wood__item col_line"><img src="upload/wood/6.png" alt=""></div>
+					<div class="wood__item col_line"><img src="upload/wood/7.png" alt=""></div>
+					<div class="wood__item col_line"><img src="upload/wood/8.png" alt=""></div>
+				</div>
+				<a data-fancybox data-src="#popup-order" href="javascript:;" class="wood__btn btn btn_violet-bg btn_big">Заказать</a>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="nav nav_bottom">
+			<div class="case">
+				<ul>
+					<li><a href="">Пластиковые окна</a></li>
+					<li><a href="">Остекление балконов</a></li>
+					<li><a href="">Отделка балконов</a></li>
+					
+				</ul>
+			</div>
+		</div>
+		<div class="footer__wrap case row">
+			<div class="footer__logo logo col"><img src="upload/logo.png" alt=""><p>В городе и области</p></div>
+			<div class="footer__phones col">
+				<div class="footer__phone"><i class="icon icon-phone-hand"></i><a href="tel:80000000000">(+373)000-00-000</a></div>
+				<div class="footer__phone"><a href="tel:(+373)000-00-000">(+373)000-00-000</a></div>
+				<a data-fancybox data-src="#popup-callback" href="javascript:;" class="footer__btn btn btn_violet-border btn_small">Перезвоните мне</a>
+			</div>
+		</div>
+	</footer>
+	<div class="popups">
+		<div class="popup popup_order" id="popup-order">
+			<div class="popup__close" data-fancybox-close><i class="icon icon-cross"></i></div>
+			<div class="popup__wrap">
+				<div class="popup__title"><p><a data-fancybox data-src="#popup-callback" href="javascript:;" class="color-green">Заказ обратного звонка</a> или </p><span class="color-violet">Вызвать замерщика</span></div>
+				<div class="popup__elements">
+					<form action="javascript:void(null);" method="post" id="form_6" onsubmit="sendForm('form_6');">
+						<input type="text" class="popup__input input input_big" placeholder="Ваше имя" name="name" required="true">
+						<input type="text" class="popup__input input input_big input_phone" placeholder="Ваш телефон" name="phone" required="true">
+						<textarea class="popup__textarea textarea textarea_default textarea_big" placeholder="Дополнительная информация" name="info"></textarea>
+						<input type="hidden" name="subject" value="Форма - 'Вызвать замерщика'">
+						<button class="popup__btn btn btn_violet-bg btn_big">Записаться на замер</button>
+					</form>
+				</div>
+			</div>
+			<div class="popup__policy">Оставляя свои контактные данные, вы подтверждаете свое совершеннолетие, соглашаетесь на обработку персональных данных в соответствии с <a data-fancybox data-src="#popup-policy" href="javascript:;">Правовой информацией</a></div>
+		</div>
+		<div class="popup popup_order" id="popup-callback">
+			<div class="popup__close" data-fancybox-close><i class="icon icon-cross"></i></div>
+			<div class="popup__wrap">
+				<div class="popup__title"><span class="color-green">Заказ обратного звонка</span><p> или <a data-fancybox data-src="#popup-order" href="javascript:;" class="color-violet">Вызвать замерщика</a></p></div>
+				<div class="popup__elements">
+					<form action="javascript:void(null);" method="post" id="form_7" onsubmit="sendForm('form_7');">
+						<input type="text" class="popup__input input input_big" placeholder="Ваше имя" name="name" required="true">
+						<input type="text" class="popup__input input input_big input_phone" placeholder="Ваш телефон" name="phone" required="true">
+						<textarea class="popup__textarea textarea textarea_default textarea_big" placeholder="Дополнительная информация" name="info"></textarea>
+						<input type="hidden" name="subject" value="Форма - 'Заказ обратного звонка'">
+						<button class="popup__btn btn btn_green-bg btn_big">Заказать обратный звонок</button>
+					</form>
+				</div>
+			</div>
+			<div class="popup__policy">Оставляя свои контактные данные, вы подтверждаете свое совершеннолетие, соглашаетесь на обработку персональных данных в соответствии с <a data-fancybox data-src="#popup-policy" href="javascript:;">Правовой информацией</a></div>
+		</div>
+		<div class="popup popup_gift" id="popup-gift">
+			<div class="popup__close" data-fancybox-close><i class="icon icon-cross"></i></div>
+			
+			</div>
+			<div class="popup__policy">Оставляя свои контактные данные, вы подтверждаете свое совершеннолетие, соглашаетесь на обработку персональных данных в соответствии с <a data-fancybox data-src="#popup-policy" href="javascript:;">Правовой информацией</a></div>
+		</div>
+		<div class="popup popup_roulette" id="popup-roulette">
+			<div class="popup__close" data-fancybox-close><i class="icon icon-cross"></i></div>
+			<div class="popup__title">Бесплатный замер <b></b>СЕГОДНЯ!</div>
+			<div class="popup__count">Осталось <span>5</span> мест</div>
+		</div>
+		<div class="popup popup_policy" id="popup-policy">
+			<div class="popup__close" data-fancybox-close><i class="icon icon-cross"></i></div>
+			<div class="popup__title">Правовая информация</div>
+			<div class="popup__wrap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolore illo eius vel, nemo perferendis illum, quo consequatur id delectus iure, exercitationem, maiores temporibus placeat voluptates incidunt voluptatibus sunt praesentium. Possimus aliquid suscipit, ullam blanditiis sunt ratione, hic, ab assumenda perspiciatis inventore rem animi voluptates quasi aspernatur tempora nemo! Molestiae quaerat quam magni alias vitae adipisci, aperiam, pariatur ea deserunt ipsam error recusandae quod qui assumenda? Obcaecati id quo delectus maiores atque, sed inventore sunt magni sint minus quas, nesciunt, distinctio veniam deleniti non impedit dolor dicta pariatur cum alias culpa aperiam! In vel, libero! Perferendis itaque impedit eaque dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolore illo eius vel, nemo perferendis illum, quo consequatur id delectus iure, exercitationem, maiores temporibus placeat voluptates incidunt voluptatibus sunt praesentium. Possimus aliquid suscipit, ullam blanditiis sunt ratione, hic, ab assumenda perspiciatis inventore rem animi voluptates quasi aspernatur tempora nemo! Molestiae quaerat quam magni alias vitae adipisci, aperiam, pariatur ea deserunt ipsam error recusandae quod qui assumenda? Obcaecati id quo delectus maiores atque, sed inventore sunt magni sint minus quas, nesciunt, distinctio veniam deleniti non impedit dolor dicta pariatur cum alias culpa aperiam! In vel, libero! Perferendis itaque impedit eaque dignissimos.</div>
+		</div>
+		<div class="popup popup_thanks" id="popup-thanks">
+			<div class="popup__close" data-fancybox-close><i class="icon icon-cross"></i></div>
+			<div class="popup__title">Спасибо за Вашу заявку!</div>
+		</div>
+	</div>
+</body>
+</html>
